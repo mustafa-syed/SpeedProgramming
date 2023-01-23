@@ -13,6 +13,17 @@ void run_Ugly_Numbers() {
     }
 }
 
+void run_SubsetSum() {
+    vector<int> arr = { 1,2,3,4,5 };
+    cout << "arr = { 1,2,3,4,5 }, sum = 9"<<endl;
+
+    if (isSubsetSum(arr, 9) == true)
+        cout << "yes";
+    else
+        cout << "no";
+    cout << endl;
+}
+
 int main()
 {
     char c = 'y';
@@ -21,10 +32,14 @@ int main()
         int n;
         cout << "Problem to run:" << endl;
         cout << "1. Ugly Numbers" << endl;
+        cout << "2. Subset Sum" << endl;
         cin >> n;
         switch (n) {
         case 1:         //////////// 1. Ugly Numbers ///////////
             run_Ugly_Numbers();
+            break;
+        case 2:         //////////// 2. Subset Sum   ///////////
+            run_SubsetSum();
             break;
         default:        //////////// Default         ///////////
             cout << "Try again..."<<endl;
