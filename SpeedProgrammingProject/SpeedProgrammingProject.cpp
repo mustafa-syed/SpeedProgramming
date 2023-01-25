@@ -24,6 +24,15 @@ void run_SubsetSum() {
     cout << endl;
 }
 
+
+void run_NthFibonacci() {
+    long long n;
+    cout << "Enter the value of N.\n n=";
+    cin >> n;
+
+    cout<<"Fibonacci term is: "<<nthFibonacci(n)<<endl;
+}
+
 int main()
 {
     char c = 'y';
@@ -33,6 +42,7 @@ int main()
         cout << "Problem to run:" << endl;
         cout << "1. Ugly Numbers" << endl;
         cout << "2. Subset Sum" << endl;
+        cout << "3. Nth Fibonacci Number" << endl;
         cin >> n;
         switch (n) {
         case 1:         //////////// 1. Ugly Numbers ///////////
@@ -40,6 +50,9 @@ int main()
             break;
         case 2:         //////////// 2. Subset Sum   ///////////
             run_SubsetSum();
+            break;
+        case 3:         //////////// 3. Fibonacci    ///////////
+            run_NthFibonacci();
             break;
         default:        //////////// Default         ///////////
             cout << "Try again..."<<endl;
